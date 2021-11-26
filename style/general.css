@@ -1,0 +1,254 @@
+@font-face {
+    font-family: bebas;
+    src: url('./fonts/BebasNeue-Regular.ttf');
+}
+
+body {
+    background-color: #67595E;
+    margin: 0;
+    font-family: bebas;
+}
+
+.title {
+    height: 96px;
+    width: 100vw;
+    padding: 4px;
+}
+
+.title img {
+    display: block;
+    height: 64px;
+    width: 64px;
+    margin: 4px auto;
+    filter: invert(80%) sepia(9%) saturate(1034%) hue-rotate(307deg) brightness(98%) contrast(86%);
+}
+
+.title h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 0 0 2px #67595E;
+    margin: 8px;
+}
+
+p {
+    color: #fff;
+    text-shadow: 0 0 2px #67595E;
+    margin: 8px;
+    font-size: 24px;
+}
+
+.not-mobile-card {
+    display: none;
+}
+
+.timeline {
+    position: relative;
+    width: 100vw;
+    margin: 16px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #eed6d3;
+    border-radius: 8px;
+    top: 0;
+    bottom: 0;
+    left: 24px;
+}
+
+.date {
+    position: relative;
+    background-color: #E8B4B8;
+    border: 4px #eed6d3 solid;
+    margin: 16px 0 16px 0;
+    padding: 4px;
+    width: 80vw;
+    left: 48px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.date::after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    height: 32px;
+    width: 32px;
+    top: 0;
+    left: -42px;
+    background-image: url('./icon/heart.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert(80%) sepia(9%) saturate(1034%) hue-rotate(307deg) brightness(98%) contrast(86%);
+}
+
+.date h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+audio {
+    display: block;
+    width: 100%;
+    margin: 4px auto;
+}
+
+.photo-match {
+    box-sizing: border-box;
+    width: 40%;
+    margin: 4%;
+    height: auto;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.match-left {
+    animation: match_left 5s 1;
+}
+
+.match-right {
+    animation: match_right 5s 1;
+}
+
+.match-heart {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    animation: match_heart 6s 1;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(156deg) brightness(100%) contrast(103%);
+}
+
+.instagram-story {
+    display: block;
+    width: 90%;
+    margin: 4px auto 4px auto;
+}
+
+.photo-chat {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    margin: 2%;
+    height: auto;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.chat {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 2%;
+    padding: 4px;
+    background-color: #fff;
+    color: #67595E;
+    font-size: 18px;
+}
+
+
+
+@keyframes match_left {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    80% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes match_right {
+    0% {
+        transform: translateX(300px);
+    }
+
+    80% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes match_heart {
+    0% {
+        opacity: 0%;
+    }
+
+    85% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+
+@media (min-width:600px) {
+
+    * {
+        display: none;
+    }
+
+    html,
+    head,
+    body,
+    .not-mobile-card,
+    .not-mobile-card img,
+    .not-mobile-card h1,
+    .not-mobile-card h2 {
+        display: block;
+        color: #67595E;
+    }
+
+    .not-mobile-card {
+        position: absolute;
+        height: 400px;
+        width: 350px;
+        background-color: #A49393;
+        border-radius: 8px;
+        border: 4px solid #beb0b0;
+        box-shadow: 4px 4px 4px #000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .not-mobile-card img {
+        margin: 32px auto 32px auto;
+        height: 64px;
+        width: 64px;
+        filter: invert(37%) sepia(1%) saturate(3028%) hue-rotate(287deg) brightness(95%) contrast(94%);
+    }
+
+    .not-mobile-card h1,
+    .not-mobile-card h2 {
+        text-align: center;
+    }
+
+}
