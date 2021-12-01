@@ -71,7 +71,6 @@ p {
     width: 80vw;
     left: 48px;
     border-radius: 8px;
-    overflow: hidden;
 }
 
 .date::after {
@@ -87,6 +86,10 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     filter: invert(80%) sepia(9%) saturate(1034%) hue-rotate(307deg) brightness(98%) contrast(86%);
+}
+
+.no-overflow {
+    overflow: hidden;
 }
 
 .date h1 {
