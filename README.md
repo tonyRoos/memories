@@ -6,4 +6,4 @@ This is a personal website for someone i love very much, meant for mobile.
 
 If you are on computer or tablet, please, use inspect to simulate.
 
-https://marcosroos.github.io/memories/
+https://tonyRoos.github.io/memories/
